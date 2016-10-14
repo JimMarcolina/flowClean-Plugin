@@ -2,7 +2,7 @@
 
 # **Description**
 
-FlowClean is an algorithm that automatically identifies and flags fluorescence anomalies in flow cytometry data so that these can be easily removed. The FlowClean algorithm utilizes the R statistical computing environment and is implemented in FlowJo as a plugin that integrates flowClean’s functionality into FlowJo version 10.1r7.
+FlowClean is an algorithm that automatically identifies and flags fluorescence anomalies in flow cytometry data so that these can be easily removed. The FlowClean algorithm utilizes the R statistical computing environment and is implemented in FlowJo as a plugin that integrates flowClean’s functionality into FlowJo version 10.1r7 or later.
 
 # **Dependencies**
 
@@ -10,19 +10,22 @@ This plugin requires R and the packages "flowCore" and “flowClean.” Ensure t
 
 # **Installation Instructions**
 
-1. To install these packages, open enter the following into your open R console: 
+1. To install these packages, open enter the following into your open R console:
 
     1. source("https://bioconductor.org/biocLite.R")
 
-biocLite("flowCore") biocLite(“flowClean”)
+    2. biocLite("flowCore")
+
+    3. biocLite(“flowClean”)
+    For troubleshooting tips, see the Daily Dongle article [Tips for Troubleshooting Plugins and R](http://flowjo.typepad.com/the_daily_dongle/2016/10/tips-for-troubleshooting-plugins-and-r.html).
 
 2. To install the FlowClean plugin:
 
-    2. Download FlowClean.jar from the FlowJo Exchange.
+    1. Download FlowClean.jar from the FlowJo Exchange.
 
-    3. Place the FlowClean.jar file in your Plugins folder.
+    2. Place the FlowClean.jar file in your Plugins folder.
 
-    4. Restart FlowJo and FlowClean should appear as an option within the Plugins menu.
+    3. Restart FlowJo and FlowClean should appear as an option within the Plugins menu.
 
 # **Disclaimer:**
 
@@ -48,23 +51,10 @@ FlowJo, LLC further advises users of third-party products or applications from t
 
 # **flowClean Plugin Documentation**
 
-[https://flowjo-plugin/content/](https://flowjo-plugin/content/)
+[FlowClean on GitBook](https://www.gitbook.com/book/flowjollc/flowclean-plugin-documentation/details)
 
 **flowClean Plugin References**
 
-1. Fletez-Brant, K. et al. (2016) flowClean: Automated identification and
+1. Fletez-Brant K, Spidlen J, Brinkman RR, Roederer M, Chattopadhyay PK. flowClean: Automated identification and removal of fluorescence anomalies in flow cytometry data. *Cytometry A.* 2016 May;89(5):461-71. doi: 10.1002/cyto.a.22837.
 
-removal of fluorescence anomalies in flow cytometry data. Cytometry A,
-
-DOI:  10.1002/cyto.a.22837. [Epub ahead of print]
-
-2. Fletez-Brant, K. flowClean Reference Manual, version 1.5.1, 2015.
-
-Available at
-
-https://www.bioconductor.org/packages/devel/bioc/manuals/flowClean/
-
-man/flowClean.pdf.
-
-3. [Link to flowClean package on Bioconductor](https://www.bioconductor.org/packages/flowClean/)
-
+2. flowClean BioConductor package---A quality control tool for flow cytometry data based on compositional data analysis, available at [Bioconductor](http://bioconductor.org/packages/flowClean)
